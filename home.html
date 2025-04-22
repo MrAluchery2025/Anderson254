@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mike Anderson | Frontend Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #111111;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #555555;
+    }
+
+    .hero-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-image img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      text-align: left;
+      max-width: 600px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content h2 {
+      font-size: 1.5rem;
+      color: #555555;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #666666;
+      margin-bottom: 2rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn.primary {
+      background-color: #111111;
+      color: #ffffff;
+    }
+
+    .btn.primary:hover {
+      background-color: #333333;
+    }
+
+    .btn.outline {
+      border: 2px solid #111111;
+      color: #111111;
+    }
+
+    .btn.outline:hover {
+      background-color: #111111;
+      color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 2.25rem;
+      }
+
+      .hero-content h2 {
+        font-size: 1.2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      Mike Anderson
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-section">
+    <div class="hero-image">
+      <img src="man.jpg" alt="Mike Anderson">
+    </div>
+    <div class="hero-content">
+      <h1>Mike Anderson</h1>
+      <h2>Frontend Web Developer</h2>
+      <p>I build clean, user-friendly web interfaces that bring your ideas to life.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn primary">Download CV</a>
+        <a href="#" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    console.log("Portfolio loaded for Mike Anderson.");
+    // Future JavaScript goes here
+  </script>
+</body>
+</html>

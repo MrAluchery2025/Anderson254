@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mike Anderson | About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fafafa;
+      color: #111111;
+      line-height: 1.6;
+      padding-bottom: 50px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #222222;
+      border-bottom: 3px solid #444444;
+    }
+
+    nav .logo {
+      font-size: 1.8rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    .about-section {
+      max-width: 1200px;
+      margin: 5rem auto;
+      padding: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .about-image img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .about-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-content {
+      max-width: 650px;
+      text-align: left;
+    }
+
+    .about-content h1 {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #333333;
+    }
+
+    .about-content h2 {
+      font-size: 1.7rem;
+      color: #ff6347;
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      color: #555555;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .skills-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+      color: #444444;
+    }
+
+    .skills-list li {
+      margin-bottom: 0.7rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .skills-list li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #ff6347;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      padding: 0.8rem 1.8rem;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn.primary {
+      background-color: #111111;
+      color: #ffffff;
+      border: 2px solid #111111;
+    }
+
+    .btn.primary:hover {
+      background-color: #ff6347;
+      color: #ffffff;
+      border-color: #ff6347;
+    }
+
+    .btn.outline {
+      background-color: transparent;
+      border: 2px solid #111111;
+      color: #111111;
+    }
+
+    .btn.outline:hover {
+      background-color: #111111;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-content h1 {
+        font-size: 2.8rem;
+      }
+
+      .about-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .about-content p {
+        font-size: 1rem;
+      }
+
+      .cta-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      Mike Anderson
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="about-section">
+    <div class="about-image">
+      <img src="man.jpg" alt="Mike Anderson">
+    </div>
+    <div class="about-content">
+      <h1>Mike Anderson</h1>
+      <h2>Frontend Web Developer</h2>
+      <p>I specialize in creating visually appealing, user-centric websites that are both functional and beautiful. With a strong background in HTML, CSS, and JavaScript, I bring ideas to life with clean and efficient code.</p>
+
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <div class="cta-buttons">
+        <a href="resume.pdf" class="btn primary" download>Download Resume</a>
+        <a href="contact.html" class="btn outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    console.log("About page loaded for Mike Anderson.");
+    // Add interactivity or animations here if necessary
+  </script>
+</body>
+</html>

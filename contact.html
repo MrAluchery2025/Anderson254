@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mike Anderson | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #111111;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #222222;
+      border-bottom: 3px solid #444444;
+    }
+
+    nav .logo {
+      font-size: 1.8rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    .contact-section {
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 4rem;
+      background: linear-gradient(to bottom right, #ff6347, #ff9966);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .contact-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 1.2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 2px solid #ddd;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border: 2px solid #ff6347;
+      box-shadow: 0 0 8px rgba(255, 99, 71, 0.5);
+    }
+
+    .contact-form textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    .contact-form button {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #111111;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff6347;
+      transform: scale(1.05);
+    }
+
+    .contact-details {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      gap: 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .contact-details div {
+      width: 45%;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contact-details div:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-details h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333333;
+    }
+
+    .contact-details p {
+      font-size: 1rem;
+      color: #555555;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-details {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      Mike Anderson
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form" method="POST" action="your-form-handler.php">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-details">
+      <div>
+        <h3>Email</h3>
+        <p>mikeanderson@example.com</p>
+      </div>
+      <div>
+        <h3>Phone</h3>
+        <p>+1 234 567 890</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    console.log("Contact page loaded for Mike Anderson.");
+    // You can add form validation or other functionality here
+  </script>
+</body>
+</html>

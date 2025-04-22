@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mike Anderson | Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #111111;
+      line-height: 1.6;
+      padding-bottom: 50px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #222222;
+      border-bottom: 3px solid #444444;
+    }
+
+    nav .logo {
+      font-size: 1.8rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    .projects-section {
+      max-width: 1200px;
+      margin: 5rem auto;
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card {
+      background-color: #fafafa;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card .project-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      border-radius: 8px;
+      transition: opacity 0.5s ease;
+    }
+
+    .project-card:hover .project-image {
+      opacity: 0.3;
+    }
+
+    .project-card .project-info {
+      z-index: 1;
+      position: relative;
+    }
+
+    .project-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #333333;
+      transition: color 0.3s ease;
+    }
+
+    .project-card p {
+      font-size: 1.1rem;
+      color: #555555;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-card .btn {
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      background-color: #111111;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .project-card .btn:hover {
+      background-color: #ff6347;
+    }
+
+    @media (max-width: 768px) {
+      .projects-section {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      Mike Anderson
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="projects-section">
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('project1-image.jpg');"></div>
+      <div class="project-info">
+        <h3>Project One</h3>
+        <p>This is a web development project where I created a responsive, modern website using HTML, CSS, and JavaScript. The goal was to create a user-friendly interface with interactive elements.</p>
+        <a href="https://github.com/mikeanderson/project-one" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('project2-image.jpg');"></div>
+      <div class="project-info">
+        <h3>Project Two</h3>
+        <p>This project is a personal blog where I implemented advanced CSS techniques to create a sleek and professional design. It includes a custom JavaScript feature for dynamic content loading.</p>
+        <a href="https://github.com/mikeanderson/project-two" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('project3-image.jpg');"></div>
+      <div class="project-info">
+        <h3>Project Three</h3>
+        <p>This project is a portfolio site where I showcase my skills and previous work. It uses smooth animations and a custom layout that adapts to different screen sizes.</p>
+        <a href="https://github.com/mikeanderson/project-three" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image" style="background-image: url('project4-image.jpg');"></div>
+      <div class="project-info">
+        <h3>Project Four</h3>
+        <p>A mobile-first e-commerce site designed for a small business. The site features a product catalog, shopping cart, and checkout functionality, all developed with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/mikeanderson/project-four" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    console.log("Projects page loaded for Mike Anderson.");
+    // You can add any dynamic interactions here in the future if needed
+  </script>
+</body>
+</html>
